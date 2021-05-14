@@ -4,9 +4,13 @@ import com.edu.info.manager.domain.Student;
 
 
 public class StudentDao {
-
     private static Student [] arr = new Student[5];
-
+    static {
+        Student stu1 = new Student("km01","Tony",22,"2020-01-01");
+        Student stu2 = new Student("km02","Gigi",21,"1990-01-01");
+        arr[0] = stu1;
+        arr[1] = stu2;
+    }
     public boolean addStudent(Student stu) {
         int index = -1;
         for (int i = 0; i < arr.length; i++) {

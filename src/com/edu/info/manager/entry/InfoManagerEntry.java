@@ -1,5 +1,6 @@
 package com.edu.info.manager.entry;
 
+import com.edu.info.manager.controller.OtherStudentController;
 import com.edu.info.manager.controller.StudentController;
 
 import java.util.Scanner;
@@ -14,11 +15,11 @@ public class InfoManagerEntry {
             int choice = sc.nextInt();
             switch (choice) {
                 case 1:
-                    StudentController studentController = new StudentController();
-                    studentController.start();
+                    OtherStudentController otherStudentController = new OtherStudentController();
+                    otherStudentController.start();
                     break;
                 case 2:
-                    System.out.println("老師管理");
+                    System.out.println("老師管理系統");
                     break;
                 case 3:
                     System.out.println("謝謝你的使用!");
